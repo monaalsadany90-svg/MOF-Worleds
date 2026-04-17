@@ -1,0 +1,95 @@
+/* الإعدادات النهائية لموقع عوالم موف */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    direction: rtl;
+    min-height: 100vh;
+    background-image: url('a.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+}
+
+/* القائمة العلوية السحرية */
+.navbar {
+    background: rgba(15, 15, 35, 0.9);
+    backdrop-filter: blur(15px);
+    border-bottom: 3px solid #ffd700;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* مساحة واسعة بين الأقسام */
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: 0.4s;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+    text-shadow: 0 0 15px #ffd700;
+}
+
+/* تنسيق المحتوى داخل الصفحة */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* خلفية داكنة لتبرز النصوص */
+    border-radius: 30px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 10px #000;
+}
+
+p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* الكروت (للشخصيات أو التمائم) */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #8b5cf6;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: #ffd700;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+}
