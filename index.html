@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عالم الحروف السحرية</title>
+    <style>
+        :root {
+            --magic-purple: #2d1b4e;
+            --gold: #d4af37;
+            --light-text: #f0f0f0;
+        }
+        body {
+            background: radial-gradient(circle, #1a0b2e 0%, #09050f 100%);
+            color: var(--light-text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        nav {
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover { text-shadow: 0 0 10px var(--gold); }
+
+        .hero {
+            margin-top: 60px;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero img {
+            max-width: 90%;
+            border: 3px solid var(--gold);
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(157, 80, 187, 0.5);
+        }
+
+        .section-title {
+            color: var(--gold);
+            font-size: 2.5em;
+            margin: 40px 0;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .characters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 15px;
+            padding: 15px;
+            width: 200px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 { color: var(--gold); margin-top: 10px; }
+
+        footer {
+            background: #000;
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#heroes">الأبطال</a>
+    <a href="#contact">تواصل معنا</a>
+</nav>
+
+<section id="home" class="hero">
+    <h1 class="section-title">مغامرة فرح: عالم بلا حدود</h1>
+    <img src="poster.png" alt="عالم الحروف السحرية">
+    <p style="font-size: 1.2em; max-width: 800px; margin: 20px auto;">
+        انضموا إلى فرح وعمر في رحلة تعليمية خيالية لاستعادة الحروف المفقودة ومواجهة قوى الظلام في القصر السحري.
+    </p>
+</section>
+
+<section id="heroes">
+    <h2 class="section-title">أبطالنا المبدعون</h2>
+    <div class="characters">
+        <div class="card">
+            <img src="farah.png" alt="فرح">
+            <h3>فرح</h3>
+        </div>
+        <div class="card">
+            <img src="omar.png" alt="عمر">
+            <h3>عمر</h3>
+        </div>
+        <div class="card">
+            <img src="lulu.png" alt="لؤلؤة">
+            <h3>لؤلؤة</h3>
+        </div>
+        <div class="card">
+            <img src="milana.png" alt="ميلانا">
+            <h3>ميلانا</h3>
+        </div>
+        <div class="card">
+            <img src="zhulama.png" alt="ظلامة">
+            <h3>ظلامة</h3>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>جميع الحقوق محفوظة &copy; عالم الحروف السحرية 2026</p>
+    <p>تم التصميم بكل حب لدعم المحتوى التعليمي العربي</p>
+</footer>
+
+</body>
+</html>
